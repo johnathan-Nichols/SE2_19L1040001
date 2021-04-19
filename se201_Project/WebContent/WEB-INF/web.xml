@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<element>
+	<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+		<display-name>User Management</display-name>
+	</web-app>
+	
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>servlet.TestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/Test</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ButtonServlet</servlet-name>
+		<servlet-class>servlet.ButtonServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ButtonServlet</servlet-name>
+		<url-pattern>/ButtonServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SignUpForm</servlet-name>
+		<servlet-class>servlet.SignUpFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SignUpForm</servlet-name>
+		<url-pattern>/SignUpForm</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>VerifySignUpForm</servlet-name>
+		<servlet-class>servlet.VerifySignUpFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>VerifySignUpForm</servlet-name>
+		<url-pattern>/VerifySignUpForm</url-pattern>
+	</servlet-mapping>
+</element>
